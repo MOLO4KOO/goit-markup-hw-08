@@ -1,12 +1,16 @@
 .footer-container {
     display: flex;
     align-items: baseline;
+    
+  }
+  .right{
+    margin-left: 70px;
   }
   .footer__contacts {
     margin-right: 70px;
   }
   .footer {
-    background-color: var(--bg-footer-color);
+    background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -14,7 +18,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-title-color);
+    color: #FFFFFF;
   }
   .address {
     margin-top: 20px;
@@ -23,11 +27,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--footer-color);
+    color: #ffffff99;
     font-style: normal;
   }
   .footer__studio {
-    color: var(--button-text-color);
+    color: #FFFFFF;
   }
   .connection__link {
     font-weight: 400;
@@ -38,7 +42,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: var(--theme-color);
     }
     display: block;
   }
@@ -54,7 +58,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-title-color);
+    color: #FFFFFF;
     margin-bottom: 20px;
   }
   .join__item {
@@ -79,13 +83,13 @@
     }
     &:hover .social__icon,
     &:focus .social__icon {
-      fill: var(--primary-title-color);
+      fill: #FFFFFF;
     }
   }
   .join__icon {
     height: 20px;
     width: 20px;
-    fill: var(--button-text-color);
+    fill: #FFFFFF;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .follow__mail {
@@ -109,14 +113,14 @@
   .follow__btn {
     width: 200px;
     height: 50px;
-    background-color: var(--accent-color);
+    background-color: var(--theme-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: var(--primary-title-color);
+    color: #FFFFFF;
     margin-left: 12px;
     position: relative;
     display: flex;

@@ -1,18 +1,12 @@
 :root {
   --title-color: #212121;
-  --accent-color: #2196f3;
+  --theme-color: #2196f3;
   --text-color: #757575;
-  --primary-title-color: #ffffff;
   --background-color: #2f303a;
   --button-color: #2196f3;
-  --button-text-color: #ffffff;
-  --footer-color: #ffffff99;
-  --bg-footer-color: #2f303a;
-  --buttons-color-portfolio: #f5f4fa;
-  --footer-link-color: rgba(255, 255, 255, 0.6);
-  --our-team-bgc: #f5f4fa;
   --icon-color: #afb1b8;
-  --modal-color-input: #757575;
+  --font:"Raleway";
+  --secondary-font:"Roboto";
 }
 
 p,
@@ -87,21 +81,6 @@ a {
   margin: 0 auto;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
-.current::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-  display: block;
-  bottom: -37px;
-}
-
 .header {
   padding-top: 29px;
   padding-bottom: 29px;
@@ -114,11 +93,11 @@ a {
 }
 
 .contacts__link:hover .contacts__icon {
-  fill: var(--accent-color);
+  fill: var(--theme-color);
 }
 
 .contacts__link:focus .contacts__icon {
-  fill: var(--accent-color);
+  fill: var(--theme-color);
 }
 
 .header__container {
@@ -152,7 +131,7 @@ a {
 }
 
 .logo {
-  color: var(--accent-color);
+  color: var(--theme-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -176,7 +155,7 @@ a {
 }
 
 .nav__link:hover, .nav__link:focus {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .contacts__link {
@@ -189,11 +168,26 @@ a {
 }
 
 .contacts__link:hover, .contacts__link:focus {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 .contacts__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.current {
+  color: var(--theme-color);
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--theme-color);
+  display: block;
+  bottom: -37px;
 }
 
 .hero {
@@ -204,6 +198,11 @@ a {
   background-position: center;
   background-size: cover;
   text-align: center;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .hero__title {
@@ -211,14 +210,14 @@ a {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: var(--primary-title-color);
+  color: #FFFFFF;
   margin-bottom: 66px;
   text-transform: uppercase;
 }
 
 .hero__button {
   background-color: var(--button-color);
-  color: var(--button-text-color);
+  color: #FFFFFF;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -228,7 +227,7 @@ a {
 .features__container {
   height: 120px;
   width: 270px;
-  background-color: var(--buttons-color-portfolio);
+  background-color: var(--#f5f4fa);
   margin-bottom: 40px;
   border-radius: 4px;
   display: flex;
@@ -284,7 +283,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-title-color);
+  color: #FFFFFF;
   background: rgba(47, 48, 58, 0.8);
   bottom: 0;
   height: 70px;
@@ -302,7 +301,7 @@ a {
 }
 
 .section__team {
-  background-color: var(--our-team-bgc);
+  background-color: var(--#f5f4fa);
 }
 
 .team__title {
@@ -378,7 +377,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--button-text-color);
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,7 +390,7 @@ a {
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
-  fill: var(--primary-title-color);
+  fill: #FFFFFF;
 }
 
 .customer {
@@ -419,7 +418,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  background-color: var(--button-text-color);
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -442,12 +441,16 @@ a {
   align-items: baseline;
 }
 
+.right {
+  margin-left: 70px;
+}
+
 .footer__contacts {
   margin-right: 70px;
 }
 
 .footer {
-  background-color: var(--bg-footer-color);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -456,7 +459,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: #FFFFFF;
 }
 
 .address {
@@ -467,12 +470,12 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--footer-color);
+  color: #ffffff99;
   font-style: normal;
 }
 
 .footer__studio {
-  color: var(--button-text-color);
+  color: #FFFFFF;
 }
 
 .connection__link {
@@ -486,7 +489,7 @@ a {
 }
 
 .connection__link:hover, .connection__link:focus {
-  color: var(--accent-color);
+  color: var(--theme-color);
 }
 
 /* !!!!!!!!!JOIN-footer!!!!!!!*/
@@ -501,7 +504,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-title-color);
+  color: #FFFFFF;
   margin-bottom: 20px;
 }
 
@@ -531,13 +534,13 @@ a {
 
 .join__link:hover .social__icon,
 .join__link:focus .social__icon {
-  fill: var(--primary-title-color);
+  fill: #FFFFFF;
 }
 
 .join__icon {
   height: 20px;
   width: 20px;
-  fill: var(--button-text-color);
+  fill: #FFFFFF;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -564,14 +567,14 @@ a {
 .follow__btn {
   width: 200px;
   height: 50px;
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--primary-title-color);
+  color: #FFFFFF;
   margin-left: 12px;
   position: relative;
   display: flex;
@@ -634,7 +637,7 @@ a {
 }
 
 .close-btn:hover, .close-btn:focus {
-  fill: var(--accent-color);
+  fill: var(--theme-color);
 }
 
 .button-icon {
@@ -659,7 +662,7 @@ a {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--modal-color-input);
+  color: #757575;
   display: block;
   margin-bottom: 5px;
 }
@@ -682,11 +685,11 @@ a {
 }
 
 .modal-input:focus {
-  border-color: var(--accent-color);
+  border-color: var(--theme-color);
 }
 
 .modal-input:focus + .input-icon {
-  fill: var(--accent-color);
+  fill: var(--theme-color);
 }
 
 .input-icon {
@@ -737,7 +740,7 @@ a {
 }
 
 .check-text .modal-checkbox:checked + .check-text span {
-  background-color: var(--accent-color);
+  background-color: var(--theme-color);
   border: none;
 }
 
@@ -747,7 +750,7 @@ a {
 
 .modal-btn {
   background-color: var(--button-color);
-  color: var(--button-text-color);
+  color: #FFFFFF;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -759,7 +762,7 @@ a {
 }
 
 .sort__button {
-  background-color: var(--buttons-color-portfolio);
+  background-color: var(--#f5f4fa);
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -771,8 +774,8 @@ a {
 }
 
 .sort__button:hover, .sort__button:focus {
-  color: var(--button-text-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  background-color: var(--theme-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
