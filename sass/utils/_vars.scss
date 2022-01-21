@@ -1,10 +1,17 @@
 :root {
-    --title-color: #212121;
-    --theme-color: #2196f3;
-    --text-color: #757575;
-    --background-color: #2f303a;
-    --button-color: #2196f3;  
-    --icon-color: #afb1b8;
-    --font:"Raleway";
-    --secondary-font:"Roboto";
+  --title-color: #212121;
+  --theme-color: #2196f3;
+  --text-color: #757575;
+  --background-color: #2f303a;
+  --button-color: #2196f3;
+  --bg-footer-color: #2f303a;
+  --our-team-bgc: #f5f4fa;
+  --icon-color: #afb1b8;
+}
+
+
+
+  body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
   }
