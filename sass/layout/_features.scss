@@ -1,40 +1,71 @@
 .features__container {
+  height: 120px;
+  background-color: var(--buttons-color-portfolio);
+  margin-bottom: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 354px;
     height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 270px;
-    background-color: var(--#f5f4fa);
-    margin-bottom: 40px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 120px;
   }
-  .features__icon {
-    height: 70px;
-    width: 70px;
-    background-size: cover;
+}
+.features__icon {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features__item {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
-  
-  .features {
-    display: flex;
-    flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
-  
-  .features__item:not(:last-child) {
-    margin-right: 30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
-  .features__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-color);
-    margin-bottom: 10px;
+}
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
-  .features__text {
-    width: 270px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-  }
+}
+.features__text {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}

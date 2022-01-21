@@ -77,8 +77,14 @@ a {
 
 .container {
   padding: 0 15px;
-  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .header {
@@ -251,13 +257,26 @@ a {
 
 .features__container {
   height: 120px;
-  width: 270px;
-  background-color: var(--#f5f4fa);
+  background-color: var(--buttons-color-portfolio);
   margin-bottom: 40px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__container {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__container {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .features__icon {
@@ -271,8 +290,34 @@ a {
   flex-wrap: wrap;
 }
 
+.features__item {
+  width: 100%;
+}
+
 .features__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .features__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .features__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .features__title {
@@ -283,10 +328,17 @@ a {
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .features__text {
-  width: 270px;
+  width: 100%;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -295,6 +347,12 @@ a {
 
 .section__task {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section__task {
+    display: none;
+  }
 }
 
 .task__wrapper {

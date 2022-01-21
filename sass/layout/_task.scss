@@ -1,6 +1,9 @@
 .section__task {
-    padding-top: 0;
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
+}
   
   .task__wrapper {
     position: relative;
