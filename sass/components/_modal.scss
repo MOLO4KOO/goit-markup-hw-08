@@ -20,14 +20,20 @@
 }
 
 .modal {
-  min-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  min-height: 581px;
+  
   background-color: #ffffff;
   border-radius: 4px;
   position: relative;
   transform: scale(1);
   transition: transform 250ms ease;
   padding: 40px;
+   @media screen and (min-width: 768px) {
+     min-width: 528px;
+     min-height: 581px;
+   }
+  
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
